@@ -1,0 +1,1075 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LexContract Solutions | Smart Contract Management & Legal Support</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#f1f5f9',
+                            100: '#cbd5e1',
+                            800: '#1e293b',
+                            900: '#0f172a',
+                            950: '#020617',
+                        },
+                        gold: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            500: '#d97706',
+                            600: '#b45309',
+                            700: '#78350f',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Font Awesome Icons for premium legal elements -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .serif-title {
+            font-family: 'Cinzel', serif;
+        }
+        @keyframes text-fade {
+            0%, 100% { opacity: 0; transform: translateY(10px); }
+            10%, 90% { opacity: 1; transform: translateY(0); }
+        }
+        .tagline-dynamic {
+            animation: text-fade 9s infinite;
+        }
+    </style>
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased min-h-screen flex flex-col">
+
+    <!-- Top Notification Bar -->
+    <div class="bg-navy-950 text-gold-100 text-xs py-2 px-4 text-center border-b border-gold-600/30 font-medium">
+        <i class="fa-solid fa-globe mr-2 text-gold-500"></i> Empowering Law Firms & Corporations Globally with Elite Legal Operations.
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur-md border-b border-slate-800 text-white shadow-xl">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <!-- Brand Logo with New Distinctive & Impressive Custom SVG Seal -->
+            <a href="#" class="flex items-center space-x-3 group">
+                <div class="bg-gradient-to-br from-gold-500 to-gold-700 p-2 rounded-xl shadow-lg group-hover:scale-105 transition-transform duration-300 flex items-center justify-center">
+                    <svg width="38" height="34" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg" class="drop-shadow-md">
+                        <!-- Outer Shield/Seal of Trust representing Structural Safety -->
+                        <path d="M50 5 L85 20 V50 C85 70 50 95 50 95 C50 95 15 70 15 50 V20 L50 5 Z" fill="#0f172a" stroke="#d97706" stroke-width="4.5" stroke-linejoin="round"/>
+                        <!-- Inner Geometric L-Pillar Base -->
+                        <path d="M38 32 V70 H65" stroke="#fff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Interlocking 'C' curve representing spatial boundaries and contract lifecycle -->
+                        <path d="M64 36 C48 36 43 48 43 55 C43 62 48 65 64 65" stroke="#d97706" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+                        <!-- Star / Compass Point representing Environmental Planning & Resilient Navigation -->
+                        <polygon points="50,14 53,22 61,22 55,27 57,35 50,30 43,35 45,27 39,22 47,22" fill="#d97706"/>
+                    </svg>
+                </div>
+                <div>
+                    <span class="block serif-title text-xl font-bold tracking-wider text-gold-500 group-hover:text-gold-100 transition-colors">LEXCONTRACT</span>
+                    <span class="block text-[10px] tracking-widest text-slate-400 font-semibold uppercase -mt-1">Solutions</span>
+                </div>
+            </a>
+
+            <!-- Navigation Links (Desktop) -->
+            <nav class="hidden md:flex space-x-8 items-center text-sm font-medium">
+                <a href="#services-focus" onclick="switchTab('services')" class="hover:text-gold-500 transition-colors text-slate-300">Services Offered</a>
+                <a href="#services-focus" onclick="switchTab('expertise')" class="hover:text-gold-500 transition-colors text-slate-300">Expertise & Licensures</a>
+                <a href="#services-focus" onclick="switchTab('education')" class="hover:text-gold-500 transition-colors text-slate-300">Education & Journey</a>
+                <a href="#services-focus" onclick="switchTab('trainings')" class="hover:text-gold-500 transition-colors text-slate-300">Global Certifications</a>
+            </nav>
+
+            <!-- Call To Action -->
+            <div class="flex items-center space-x-3">
+                <button onclick="openLeadModal('General Consultation')" class="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-navy-950 px-5 py-2.5 rounded-lg text-xs font-bold tracking-wider uppercase transition-all duration-300 hover:shadow-lg hover:shadow-gold-500/20 active:scale-95">
+                    <i class="fa-solid fa-paper-plane mr-2"></i>Contact Us
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-navy-900 text-white py-16 lg:py-24 overflow-hidden border-b border-gold-600/20">
+        <!-- Background Glows -->
+        <div class="absolute top-[-20%] left-[-10%] w-[500px] h-[500px] rounded-full bg-gold-600/10 blur-[100px] pointer-events-none"></div>
+        <div class="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] rounded-full bg-blue-600/10 blur-[100px] pointer-events-none"></div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Hero Core Copy -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center space-x-2 bg-navy-800 border border-gold-500/30 px-3 py-1.5 rounded-full text-xs font-semibold text-gold-500 tracking-wider uppercase">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <span>Your Virtual Legal Support</span>
+                    </div>
+                    
+                    <h1 class="serif-title text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-wide text-white">
+                        Where Legal Precision Meets <span class="text-transparent bg-clip-text bg-gradient-to-r from-gold-500 via-gold-100 to-gold-500">Business Efficiency</span>
+                    </h1>
+
+                    <!-- Reconciled Taglines Frame -->
+                    <div class="bg-navy-850 border-l-4 border-gold-500 p-4 rounded-r-xl space-y-1">
+                        <p class="text-xs font-bold uppercase tracking-widest text-gold-500">LexContract Solutions Standard</p>
+                        <p class="text-slate-200 text-sm font-semibold">
+                            <i class="fa-solid fa-circle-check text-gold-500 mr-2"></i>Smart Contract Management for Modern Businesses
+                        </p>
+                        <p class="text-slate-300 text-xs font-light">
+                            Professional legal administration, compliance architecture, and executive-level research remote advisory.
+                        </p>
+                    </div>
+
+                    <!-- Premium Brand Statement -->
+                    <p class="text-slate-300 text-base leading-relaxed max-w-2xl font-light">
+                        "I help law firms, consultants, government contractors, and businesses streamline contract administration, strengthen compliance, and improve legal operations through professional virtual legal and contract management services."
+                    </p>
+
+                    <div class="flex flex-col sm:flex-row justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#services-focus" class="bg-gradient-to-r from-gold-500 to-gold-600 hover:from-gold-600 hover:to-gold-700 text-navy-950 font-bold px-8 py-4 rounded-xl shadow-lg transition-all text-sm text-center hover:shadow-gold-500/10 hover:translate-y-[-2px]">
+                            Explore Service Packages
+                        </a>
+                        <button onclick="openLeadModal('Direct Advisory & Collaboration')" class="bg-navy-800 hover:bg-navy-750 border border-slate-700 hover:border-gold-500 text-slate-100 font-semibold px-8 py-4 rounded-xl transition-all text-sm text-center flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-envelope text-gold-500"></i> Contact Us
+                        </button>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-slate-800">
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl font-bold text-gold-500">15+ Yrs</div>
+                            <div class="text-xs text-slate-400">Public & Private Governance</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl font-bold text-gold-500">4 Degrees</div>
+                            <div class="text-xs text-slate-400">Inc. JD, LLM (ADR) & MNSA</div>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <div class="text-2xl font-bold text-gold-500">Licensed</div>
+                            <div class="text-xs text-slate-400">Environmental Planner (EnP)</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Elite Profile Highlight Box -->
+                <div class="lg:col-span-5">
+                    <div class="bg-gradient-to-b from-navy-800 to-navy-950 rounded-2xl p-6 sm:p-8 border border-slate-800 shadow-2xl relative">
+                        <div class="absolute -top-3 -right-3 bg-gold-600 text-navy-950 text-[10px] font-bold tracking-widest px-3 py-1 rounded-full uppercase shadow">
+                            Verified Expert Advisor
+                        </div>
+                        
+                        <!-- Principal Officer Details -->
+                        <div class="flex items-center space-x-4 pb-6 border-b border-slate-800">
+                            <!-- Monogram circle avatar -->
+                            <div class="w-16 h-16 rounded-full bg-gradient-to-br from-gold-500 to-gold-600 flex items-center justify-center text-navy-950 font-bold text-xl shadow-lg border-2 border-slate-800">
+                                AP
+                            </div>
+                            <div>
+                                <h3 class="font-bold text-lg text-white">EnP. Anna Marie R. Phalashol</h3>
+                                <p class="text-xs text-gold-500 font-semibold uppercase tracking-wider">JD, LLM (ADR), EMDRCM, MNSA</p>
+                                <p class="text-xs text-slate-400">Founder & Lead Operations Consultant</p>
+                            </div>
+                        </div>
+
+                        <!-- Synergy Blurb -->
+                        <div class="pt-6 space-y-4">
+                            <p class="text-slate-300 text-xs leading-relaxed italic">
+                                "Combining rigid legal precision with spatial planning licensures, national security rigor, and corporate crisis frameworks to assure your business contract administration has zero exposure to compliance risk."
+                            </p>
+                            
+                            <div class="space-y-2">
+                                <div class="flex items-center text-xs text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-gold-500 mr-2 text-sm"></i>
+                                    <span>Contract Lifecycle Management (CLM) Specialists</span>
+                                </div>
+                                <div class="flex items-center text-xs text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-gold-500 mr-2 text-sm"></i>
+                                    <span>Rigorous Policy, Case Law, & Ordinance Research</span>
+                                </div>
+                                <div class="flex items-center text-xs text-slate-300">
+                                    <i class="fa-solid fa-circle-check text-gold-500 mr-2 text-sm"></i>
+                                    <span>Corporate Governance & Risk Compliance Audits</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Interactive Dashboard Section (Services, Expertise, Education, Trainings) -->
+    <main id="services-focus" class="flex-grow py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <!-- Tab Controls Header -->
+        <div class="text-center max-w-3xl mx-auto mb-12">
+            <h2 class="serif-title text-3xl font-bold text-navy-900 mb-4">Credentials & Service Showcase</h2>
+            <p class="text-slate-600 text-sm">
+                Explore custom packages designed to optimize and scale your legal operational efficiency. Supported by over a decade of elite national governance, legal drafting, and risk coordination.
+            </p>
+
+            <!-- Navigation Button Controls -->
+            <div class="mt-8 inline-flex flex-wrap justify-center bg-slate-200/80 p-1.5 rounded-xl gap-1">
+                <button id="tab-btn-services" onclick="switchTab('services')" class="px-5 py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all duration-200 active-tab-style bg-navy-900 text-white shadow-md">
+                    <i class="fa-solid fa-handshake-angle mr-2"></i>Services Offered
+                </button>
+                <button id="tab-btn-expertise" onclick="switchTab('expertise')" class="px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-navy-950">
+                    <i class="fa-solid fa-stamp mr-2"></i>My Core Expertise
+                </button>
+                <button id="tab-btn-education" onclick="switchTab('education')" class="px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-navy-950">
+                    <i class="fa-solid fa-graduation-cap mr-2"></i>Education & CV
+                </button>
+                <button id="tab-btn-trainings" onclick="switchTab('trainings')" class="px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-navy-950">
+                    <i class="fa-solid fa-ribbon mr-2"></i>Global Certifications
+                </button>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT: SERVICES (Selling Section) -->
+        <div id="tab-content-services" class="tab-pane block space-y-12">
+            <!-- Services Sub-Grid -->
+            <div class="grid md:grid-cols-2 gap-8">
+                
+                <!-- Service Pack 1: Legal Support Services -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-gold-500"></div>
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="bg-gold-50 p-3 rounded-xl text-gold-600">
+                            <i class="fa-solid fa-gavel text-2xl"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Package LSS-01</span>
+                    </div>
+                    <h3 class="serif-title text-xl font-bold text-navy-900 mb-3">Legal Support Services</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-6">
+                        Meticulous and high-level virtual legal research, brief preparations, and document audits built around top-tier firm demands.
+                    </p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Legal & Case Law Research:</strong> Exhaustive extraction of judicial rulings, doctrines, and legal history.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Legal Drafting Support:</strong> Writing preliminary briefs, legal memoranda, regulatory opinions, and policy pleadings.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Policy & Ordinance Research:</strong> Tracking local environmental ordinances, administrative regulations, and zoning codes.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Regulatory Compliance Audits:</strong> Ongoing observation of governmental and regional legal shifts.</span>
+                        </li>
+                    </ul>
+                    <button onclick="openLeadModal('Legal Support Services')" class="w-full bg-navy-900 hover:bg-gold-600 hover:text-navy-950 text-white font-bold py-3 px-4 rounded-xl text-xs uppercase tracking-wider transition-all duration-200">
+                        Discuss Legal Support Services
+                    </button>
+                </div>
+
+                <!-- Service Pack 2: Contract Management Services -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-navy-800"></div>
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="bg-navy-50 p-3 rounded-xl text-navy-800">
+                            <i class="fa-solid fa-file-contract text-2xl"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Package CMS-02</span>
+                    </div>
+                    <h3 class="serif-title text-xl font-bold text-navy-900 mb-3">Contract Management Services</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-6">
+                        Seamless Contract Lifecycle Management (CLM) supporting rapid, structured corporate operational scale.
+                    </p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Contract Drafting Assistance:</strong> Structural templates, consulting services agreements, and firm NDAs.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Contract Review & Redlining:</strong> Isolating problematic indemnity conditions and auto-pricing triggers.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Contract Administration:</strong> Establishing highly secure database tracking, indexing, and compliance records.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Renewal & Term Monitoring:</strong> Keeping key parameters aligned and notifying stakeholders ahead of dates.</span>
+                        </li>
+                    </ul>
+                    <button onclick="openLeadModal('Contract Management Services')" class="w-full bg-navy-900 hover:bg-gold-600 hover:text-navy-950 text-white font-bold py-3 px-4 rounded-xl text-xs uppercase tracking-wider transition-all duration-200">
+                        Discuss Contract Management
+                    </button>
+                </div>
+
+                <!-- Service Pack 3: Compliance Services -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-gold-600"></div>
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="bg-gold-50 p-3 rounded-xl text-gold-600">
+                            <i class="fa-solid fa-file-shield text-2xl"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Package COMP-03</span>
+                    </div>
+                    <h3 class="serif-title text-xl font-bold text-navy-900 mb-3">Compliance & Corporate Governance</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-6">
+                        Strengthening organizational structures through strict corporate oversight, risk frameworks, and policy manuals.
+                    </p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Risk & Compliance Documentation:</strong> Framing internal control maps and organizational risk logs.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Corporate Governance Support:</strong> Drafting corporate charters, meeting frameworks, and Board resolutions.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Internal Policy Development:</strong> Mapping operational and remote-work handbooks against modern codes.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Audit Documentation Support:</strong> Delivering complete, structured administrative paper trails for regulatory bodies.</span>
+                        </li>
+                    </ul>
+                    <button onclick="openLeadModal('Compliance Services')" class="w-full bg-navy-900 hover:bg-gold-600 hover:text-navy-950 text-white font-bold py-3 px-4 rounded-xl text-xs uppercase tracking-wider transition-all duration-200">
+                        Discuss Compliance Mapping
+                    </button>
+                </div>
+
+                <!-- Service Pack 4: Executive Support & Board Liaison -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm hover:shadow-md transition-shadow relative overflow-hidden group">
+                    <div class="absolute top-0 left-0 w-2 h-full bg-navy-950"></div>
+                    <div class="flex items-center justify-between mb-6">
+                        <div class="bg-navy-50 p-3 rounded-xl text-navy-950">
+                            <i class="fa-solid fa-briefcase text-2xl"></i>
+                        </div>
+                        <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Package EAS-04</span>
+                    </div>
+                    <h3 class="serif-title text-xl font-bold text-navy-900 mb-3">Executive Support & Board Liaison</h3>
+                    <p class="text-slate-600 text-xs leading-relaxed mb-6">
+                        Highly diplomatic correspondence, legislative documentation, and records management for key executive departments.
+                    </p>
+                    <ul class="space-y-3 mb-8 text-sm">
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Meeting & Board Documentation:</strong> Synthesizing high-value legislative minutes and session outcomes.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Records & Database Archival:</strong> Deploying structured, searchable archives in SharePoint and Google Drive.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Business Correspondence:</strong> Authoring corporate briefs, procurement bids, and executive correspondence.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fa-solid fa-chevron-right text-gold-500 mr-2 mt-1 text-xs"></i>
+                            <span><strong>Alternative Dispute Resolution (ADR):</strong> Providing mediation logistics, session briefing papers, and prep.</span>
+                        </li>
+                    </ul>
+                    <button onclick="openLeadModal('Executive Support')" class="w-full bg-navy-900 hover:bg-gold-600 hover:text-navy-950 text-white font-bold py-3 px-4 rounded-xl text-xs uppercase tracking-wider transition-all duration-200">
+                        Discuss Executive Support
+                    </button>
+                </div>
+
+            </div>
+
+            <!-- Technology & Security Infrastructure -->
+            <div class="bg-navy-900 text-white rounded-3xl p-8 sm:p-12 relative overflow-hidden mt-8">
+                <div class="absolute -bottom-16 -right-16 w-64 h-64 bg-gold-600/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <h3 class="serif-title text-2xl font-bold text-gold-500 mb-6 text-center lg:text-left">
+                    <i class="fa-solid fa-desktop mr-2"></i> High-Security Virtual Tool-Stack Integration
+                </h3>
+                
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+                    <div class="bg-navy-850 p-4 rounded-xl border border-slate-800">
+                        <i class="fa-brands fa-microsoft text-3xl text-blue-400 mb-2"></i>
+                        <span class="block text-xs font-bold">Office 365</span>
+                        <span class="block text-[10px] text-slate-400">SharePoint & Teams</span>
+                    </div>
+                    <div class="bg-navy-850 p-4 rounded-xl border border-slate-800">
+                        <i class="fa-brands fa-google text-3xl text-red-400 mb-2"></i>
+                        <span class="block text-xs font-bold">Google Suite</span>
+                        <span class="block text-[10px] text-slate-400">Workspace & Drive</span>
+                    </div>
+                    <div class="bg-navy-850 p-4 rounded-xl border border-slate-800">
+                        <i class="fa-solid fa-video text-3xl text-sky-400 mb-2"></i>
+                        <span class="block text-xs font-bold">Zoom/Teams</span>
+                        <span class="block text-[10px] text-slate-400">Virtual Meetings</span>
+                    </div>
+                    <div class="bg-navy-850 p-4 rounded-xl border border-slate-800">
+                        <i class="fa-solid fa-database text-3xl text-yellow-400 mb-2"></i>
+                        <span class="block text-xs font-bold">Legal Registries</span>
+                        <span class="block text-[10px] text-slate-400">Case Law Engines</span>
+                    </div>
+                    <div class="bg-navy-850 p-4 rounded-xl border border-slate-800 col-span-2 md:col-span-1">
+                        <i class="fa-solid fa-map-location-dot text-3xl text-emerald-400 mb-2"></i>
+                        <span class="block text-xs font-bold">GIS & CLUP</span>
+                        <span class="block text-[10px] text-slate-400">Spatial Land Data</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT: EXPERTISE -->
+        <div id="tab-content-expertise" class="tab-pane hidden space-y-8">
+            <div class="grid md:grid-cols-12 gap-8">
+                <!-- Certifications and Examinations Card -->
+                <div class="md:col-span-5 space-y-6">
+                    <div class="bg-white rounded-2xl p-6 border border-slate-200 shadow-sm">
+                        <h3 class="serif-title text-lg font-bold text-navy-900 border-b border-slate-100 pb-3 mb-4">
+                            <i class="fa-solid fa-circle-check text-gold-500 mr-2"></i>Licensures, Exams & Certifications
+                        </h3>
+                        <div class="space-y-4">
+                            <!-- Environmental Planner -->
+                            <div class="flex items-start">
+                                <div class="bg-gold-50 p-2 rounded-lg text-gold-600 mr-3 mt-1">
+                                    <i class="fa-solid fa-passport"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-800">Licensed Environmental Planner (EnP)</h4>
+                                    <p class="text-xs text-slate-500">Professional Regulation Commission, Philippines</p>
+                                    <p class="text-xs font-semibold text-navy-900">Passed: June 2018</p>
+                                </div>
+                            </div>
+                            <!-- PTP26 Paralegal Training (Moved Here) -->
+                            <div class="flex items-start border-l-2 border-gold-500 pl-2">
+                                <div class="bg-amber-50 p-2 rounded-lg text-gold-600 mr-2 mt-1">
+                                    <i class="fa-solid fa-scale-balanced"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-800">PTP26 Paralegal Training Certification</h4>
+                                    <p class="text-xs text-slate-500">UP Law Center, Diliman, Quezon City</p>
+                                    <p class="text-xs font-semibold text-gold-700">January 2022 • Core Paralegal baseline</p>
+                                </div>
+                            </div>
+                            <!-- Civil Service -->
+                            <div class="flex items-start">
+                                <div class="bg-navy-50 p-2 rounded-lg text-navy-800 mr-3 mt-1">
+                                    <i class="fa-solid fa-briefcase"></i>
+                                </div>
+                                <div>
+                                    <h4 class="font-bold text-sm text-slate-800">Civil Service Professional Level Exam</h4>
+                                    <p class="text-xs text-slate-500">Government Career Service Commission</p>
+                                    <p class="text-xs font-semibold text-navy-900">Passed: Dec 1996</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages & Global Communication Card (Added Here) -->
+                    <div class="bg-gradient-to-br from-navy-900 to-navy-950 text-white rounded-2xl p-6 shadow-md border border-slate-800">
+                        <h3 class="serif-title text-sm font-bold text-gold-500 border-b border-slate-800 pb-3 mb-4">
+                            <i class="fa-solid fa-language mr-2"></i>Global Communication & Languages
+                        </h3>
+                        <div class="space-y-3">
+                            <div class="flex items-center justify-between border-b border-slate-800/40 pb-2">
+                                <span class="text-xs font-semibold text-slate-300">English</span>
+                                <span class="bg-gold-500/20 text-gold-300 text-[10px] font-bold px-2 py-0.5 rounded border border-gold-500/30">Fluent / Professional</span>
+                            </div>
+                            <div class="flex items-center justify-between border-b border-slate-800/40 pb-2">
+                                <span class="text-xs font-semibold text-slate-300">Filipino / Tagalog</span>
+                                <span class="bg-gold-500/20 text-gold-300 text-[10px] font-bold px-2 py-0.5 rounded border border-gold-500/30">Fluent / Native</span>
+                            </div>
+                            <div class="flex items-center justify-between border-b border-slate-800/40 pb-2">
+                                <span class="text-xs font-semibold text-slate-300">Bisayan / Cebuano</span>
+                                <span class="bg-gold-500/20 text-gold-300 text-[10px] font-bold px-2 py-0.5 rounded border border-gold-500/30">Fluent / Native</span>
+                            </div>
+                            <div class="flex items-center justify-between border-b border-slate-800/40 pb-2">
+                                <span class="text-xs font-semibold text-slate-300">French</span>
+                                <span class="bg-slate-800 text-slate-300 text-[10px] font-bold px-2 py-0.5 rounded border border-slate-700">Basic / Conversational</span>
+                            </div>
+                            <div class="flex items-center justify-between border-b border-slate-800/40 pb-2">
+                                <span class="text-xs font-semibold text-slate-300">Japanese</span>
+                                <span class="bg-slate-800 text-slate-300 text-[10px] font-bold px-2 py-0.5 rounded border border-slate-700">Basic / Conversational</span>
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs font-semibold text-slate-300">Sign Language</span>
+                                <span class="bg-slate-800 text-slate-300 text-[10px] font-bold px-2 py-0.5 rounded border border-slate-700">Basic / Functional</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Professional Expertise Area -->
+                <div class="md:col-span-7 bg-white rounded-2xl p-8 border border-slate-200 shadow-sm space-y-6">
+                    <h3 class="serif-title text-xl font-bold text-navy-900 border-b border-slate-100 pb-4">
+                        Reconciled Legal & Spatial Planning Expertise
+                    </h3>
+                    <p class="text-slate-600 text-xs sm:text-sm leading-relaxed">
+                        My profile combines structural legal capabilities with executive land use and disaster zoning parameters. Having directed the integration of 33 major statutory municipality plans under rigorous administrative environments, I deliver an elite layer of strategic legal operations support.
+                    </p>
+
+                    <div class="grid sm:grid-cols-2 gap-4">
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-sm text-navy-900 mb-2">Contract Lifecycle Management</h4>
+                            <p class="text-xs text-slate-500">Managing complete contract pathways—from precise draft structure and redlining to compliance audits and secure storage logic.</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-sm text-navy-900 mb-2">Policy & Regulatory Mapping</h4>
+                            <p class="text-xs text-slate-500">Navigating regional environmental, housing, and corporate guidelines to isolate legal operational vulnerabilities.</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-sm text-navy-900 mb-2">Alternative Dispute Resolution</h4>
+                            <p class="text-xs text-slate-500">Integrating LLM concepts in ADR to structure claims dossiers, mediate disputes, and organize case records.</p>
+                        </div>
+                        <div class="bg-slate-50 p-4 rounded-xl border border-slate-200">
+                            <h4 class="font-bold text-sm text-navy-900 mb-2">National Security Diligence</h4>
+                            <p class="text-xs text-slate-500">Executing complex corporate research backed by strict national-security level data safety and NDAs.</p>
+                        </div>
+                    </div>
+
+                    <!-- Highlighted Publications -->
+                    <div class="pt-4 border-t border-slate-100">
+                        <h4 class="font-bold text-sm text-navy-900 mb-3"><i class="fa-solid fa-file-invoice text-gold-600 mr-2"></i>Selected Publications & Research</h4>
+                        <ul class="space-y-2 text-xs">
+                            <li class="p-2.5 bg-slate-50 rounded-lg">
+                                <strong class="text-slate-800">Efficiency Assessment of Sanitary Landfill & Effluent:</strong> Published in NAST Publication, Vol. 41 No. 1 (2019). Presented at BGC Taguig.
+                            </li>
+                            <li class="p-2.5 bg-slate-50 rounded-lg">
+                                <strong class="text-slate-800">Land, Law, and Culture: Indigenous Dispute Resolution:</strong> Filed at the Intellectual Property Office of the Philippines (June 2025).
+                            </li>
+                            <li class="p-2.5 bg-slate-50 rounded-lg">
+                                <strong class="text-slate-800">Metaverse Citizenship in the Philippines: Natural & Positive Law:</strong> LLM Research (PUP, June 2024).
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT: EDUCATION -->
+        <div id="tab-content-education" class="tab-pane hidden space-y-8">
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Academic Timeline -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+                    <h3 class="serif-title text-xl font-bold text-navy-900 border-b border-slate-100 pb-4 mb-6">
+                        <i class="fa-solid fa-graduation-cap text-gold-500 mr-2"></i>Academic Profile
+                    </h3>
+                    <div class="space-y-6 relative border-l-2 border-slate-200 pl-6 ml-2">
+                        
+                        <!-- MNSA (Scholarship Highlighted) -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-gold-500 border-4 border-white animate-pulse"></div>
+                            <span class="text-xs font-bold text-gold-600">2024 - 2025</span>
+                            <div class="flex flex-wrap items-center gap-2 mb-1">
+                                <h4 class="font-bold text-sm text-navy-900">Master's in National Security Administration (MNSA)</h4>
+                                <span class="bg-navy-950 text-gold-500 text-[10px] font-extrabold px-2 py-0.5 rounded-full border border-gold-500 shadow-sm">DND Scholar</span>
+                            </div>
+                            <p class="text-xs text-slate-500">National Defense College of the Philippines (NDCP)</p>
+                            <p class="text-xs text-gold-700 italic mt-1 font-medium"><i class="fa-solid fa-trophy mr-1"></i> Exemplary Thesis Award Recipient</p>
+                        </div>
+
+                        <!-- LLM -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-navy-800 border-4 border-white"></div>
+                            <span class="text-xs font-bold text-gold-600">2023 - 2025</span>
+                            <h4 class="font-bold text-sm text-navy-900">Master of Laws (LLM) - Alternative Dispute Resolution</h4>
+                            <p class="text-xs text-slate-500">Polytechnic University of the Philippines, Sta. Mesa, Manila</p>
+                        </div>
+
+                        <!-- Diploma in Land Use Planning (Re-integrated Here) -->
+                        <div class="relative border-l-2 border-gold-500/40 pl-2">
+                            <div class="absolute -left-[33px] top-1.5 w-4 h-4 rounded-full bg-amber-500 border-4 border-white"></div>
+                            <span class="text-xs font-bold text-gold-600">Completed December 2025</span>
+                            <h4 class="font-bold text-sm text-navy-900">Diploma in Land Use Planning</h4>
+                            <p class="text-xs text-slate-500">University of the Philippines Open University</p>
+                            <p class="text-[11px] text-slate-400">Professional course parameters fully accomplished</p>
+                        </div>
+
+                        <!-- EMDRCM -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
+                            <span class="text-xs font-bold text-gold-600">2020 - 2021</span>
+                            <h4 class="font-bold text-sm text-navy-900">Executive Master's in Disaster Risk & Crisis Management</h4>
+                            <p class="text-xs text-slate-500">Asian Institute of Management (AIM), Makati</p>
+                        </div>
+
+                        <!-- Diploma in Special Education (Re-integrated Here) -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
+                            <span class="text-xs font-bold text-gold-600">Completed December 2005</span>
+                            <h4 class="font-bold text-sm text-navy-900">Diploma in Special Education</h4>
+                            <p class="text-xs text-slate-500">Southwestern University, Cebu City</p>
+                        </div>
+
+                        <!-- JD -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
+                            <span class="text-xs font-bold text-gold-600">1997 - 2002</span>
+                            <h4 class="font-bold text-sm text-navy-900">Juris Doctor (JD)</h4>
+                            <p class="text-xs text-slate-500">San Sebastian College</p>
+                        </div>
+
+                        <!-- BS Public Admin (Scholarship Highlighted) -->
+                        <div class="relative">
+                            <div class="absolute -left-[31px] top-1.5 w-4 h-4 rounded-full bg-slate-300 border-4 border-white"></div>
+                            <span class="text-xs font-bold text-gold-600">1991 - 1995</span>
+                            <div class="flex flex-wrap items-center gap-2 mb-1">
+                                <h4 class="font-bold text-sm text-navy-900">BS Public Administration</h4>
+                                <span class="bg-gold-50 text-gold-800 text-[10px] font-extrabold px-2 py-0.5 rounded-full border border-gold-500/30">University Scholar</span>
+                            </div>
+                            <p class="text-xs text-slate-500">Mindanao State University, Marawi</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Strategic Work Experience -->
+                <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+                    <h3 class="serif-title text-xl font-bold text-navy-900 border-b border-slate-100 pb-4 mb-6">
+                        <i class="fa-solid fa-timeline text-gold-500 mr-2"></i>Strategic Experience Portfolio
+                    </h3>
+                    <div class="space-y-6">
+                        <!-- Private Practice Consulting (Title Cleansed to Traditional Tone) -->
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 relative">
+                            <span class="text-xs font-bold text-gold-600 block mb-1">Dec 2021 – Present</span>
+                            <h4 class="font-bold text-sm text-navy-900">Policy and Environmental Planning Consultant</h4>
+                            <p class="text-xs text-slate-600 mt-1">
+                                Developing policy advice, legal document analysis, municipal compliance reviews, and zoning planning for local government networks.
+                            </p>
+                        </div>
+
+                        <!-- DOST Science Analyst (Remote Badges Scrubbed) -->
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200 relative">
+                            <span class="text-xs font-bold text-gold-600 block mb-1">May – Dec 2023</span>
+                            <h4 class="font-bold text-sm text-navy-900">Science Research Analyst & Technical Assistant</h4>
+                            <p class="text-xs text-slate-600 mt-1">
+                                Coordinated documentation, technical report preparation, and evidence-based planning workflows with LGU and national DOST regional partners.
+                            </p>
+                        </div>
+
+                        <!-- Municipal Planner / Dept Head -->
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                            <span class="text-xs font-bold text-gold-600 block mb-1">Jul 2019 – Aug 2020</span>
+                            <h4 class="font-bold text-sm text-navy-900">Municipal Planning & Development Coordinator (SG-24)</h4>
+                            <p class="text-xs text-slate-600 mt-1">
+                                Directed spatial-legal workflows for LGU Gigaquit. Managed synthesis of 33 major statutory plans, zoning regulations, and local climate frameworks.
+                            </p>
+                        </div>
+
+                        <!-- Sanggunian Secretary -->
+                        <div class="p-4 bg-slate-50 rounded-xl border border-slate-200">
+                            <span class="text-xs font-bold text-gold-600 block mb-1">Dec 1996 – May 2005</span>
+                            <h4 class="font-bold text-sm text-navy-900">Secretary to the Sanggunian (Legislative Head, SG-24)</h4>
+                            <p class="text-xs text-slate-600 mt-1">
+                                Governed municipal code registers, compiled council minutes, and handled regulatory legal compliance with public administration agencies.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- TAB CONTENT: TRAININGS LOG -->
+        <div id="tab-content-trainings" class="tab-pane hidden space-y-6">
+            <div class="bg-white rounded-2xl p-8 border border-slate-200 shadow-sm">
+                <h3 class="serif-title text-xl font-bold text-navy-900 border-b border-slate-100 pb-4 mb-6">
+                    <i class="fa-solid fa-ribbon text-gold-500 mr-2"></i>Global Capacity Building & Trainings Register
+                </h3>
+                <p class="text-slate-600 text-xs sm:text-sm mb-6 leading-relaxed">
+                    Committed to exceptional performance. I actively upgrade my skill spectrum by qualifying for selective courses hosted by global institutions.
+                </p>
+
+                <!-- Trainings Chronology by Year -->
+                <div class="space-y-8">
+                    <!-- Year 2026 -->
+                    <div>
+                        <div class="inline-block bg-navy-900 text-gold-500 font-bold text-xs px-3 py-1 rounded-full mb-4">YEAR 2026</div>
+                        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                                <h4 class="font-bold text-xs text-navy-900">UNITAR Women's Leadership Program</h4>
+                                <p class="text-[11px] text-slate-500">United Nations Institute for Training and Research</p>
+                                <span class="text-[10px] text-gold-600 block mt-2 font-medium">Phase II - Elite Selectee (Top 10%)</span>
+                            </div>
+                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                                <h4 class="font-bold text-xs text-navy-900">G20 Global Land Initiative</h4>
+                                <p class="text-[11px] text-slate-500">UN Conservation to Combat Desertification, Bonn, Germany</p>
+                                <span class="text-[10px] text-emerald-600 block mt-2">Wetlands, Land, & Climate Nexus</span>
+                            </div>
+                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                                <h4 class="font-bold text-xs text-navy-900">Basics of Resilience</h4>
+                                <p class="text-[11px] text-slate-500">University of the Philippines – Open University</p>
+                                <span class="text-[10px] text-slate-400 block mt-2">Systemic Risk Mitigation</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Year 2025 -->
+                    <div>
+                        <div class="inline-block bg-navy-800 text-gold-500 font-bold text-xs px-3 py-1 rounded-full mb-4">YEAR 2025</div>
+                        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                                <h4 class="font-bold text-xs text-navy-900">UNITAR Tsunami-Based DRR</h4>
+                                <p class="text-[11px] text-slate-500">UN Institute for Training & Research (Phase I)</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                                <h4 class="font-bold text-xs text-navy-900">Disaster Rehabilitation Mapping</h4>
+                                <p class="text-[11px] text-slate-500">National Disaster Risk Reduction Frameworks</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Year 2024 -->
+                    <div>
+                        <div class="inline-block bg-slate-300 text-navy-900 font-bold text-xs px-3 py-1 rounded-full mb-4">YEAR 2024</div>
+                        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                                <h4 class="font-bold text-xs text-navy-900">Paris Agreement, SDG & Law</h4>
+                                <p class="text-[11px] text-slate-500">University of Cambridge</p>
+                                <span class="text-[10px] text-gold-600 block mt-1 font-semibold">Climate Essentials</span>
+                            </div>
+                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                                <h4 class="font-bold text-xs text-navy-900">Future of the ADR Justice System</h4>
+                                <p class="text-[11px] text-slate-500">Polytechnic University of the Philippines</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                                <h4 class="font-bold text-xs text-navy-900">Biodiversity, Development & Law</h4>
+                                <p class="text-[11px] text-slate-500">University of Cambridge</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Year 2022 -->
+                    <div>
+                        <div class="inline-block bg-navy-100 text-navy-950 font-bold text-xs px-3 py-1 rounded-full mb-4">YEAR 2022</div>
+                        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                                <h4 class="font-bold text-xs text-navy-900">Environmental Laws & Policy Updates</h4>
+                                <p class="text-[11px] text-slate-500">DENR, EMB Region 1 (June 2022)</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Year 2021 -->
+                    <div>
+                        <div class="inline-block bg-slate-200 text-slate-600 font-bold text-xs px-3 py-1 rounded-full mb-4">YEARS 2021</div>
+                        <div class="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                                <h4 class="font-bold text-xs text-navy-900">Ready to Rebuild Project</h4>
+                                <p class="text-[11px] text-slate-500">World Bank / NDRRMC (2021)</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                                <h4 class="font-bold text-xs text-navy-900">Wetlands & Coastal DRR Planning</h4>
+                                <p class="text-[11px] text-slate-500">Mediterranean Wetlands Initiatives</p>
+                            </div>
+                            <div class="p-4 bg-slate-50 border border-slate-200 rounded-xl">
+                                <h4 class="font-bold text-xs text-navy-900">Development Entrepreneurship</h4>
+                                <p class="text-[11px] text-slate-500">The Asia Foundation / Australian Aid</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <!-- Professional Trust & Security Section -->
+    <section class="bg-navy-950 text-white py-16 border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 text-center sm:text-left">
+                <!-- Promise 1 -->
+                <div class="space-y-3">
+                    <div class="text-gold-500 text-3xl">
+                        <i class="fa-solid fa-shield-virus"></i>
+                    </div>
+                    <h4 class="serif-title text-lg font-bold text-white">Absolute Confidentiality</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Backed by Master's level security frameworks (MNSA), I operate under strict private records protocols, utilizing encrypted platforms and robust security measures.
+                    </p>
+                </div>
+                <!-- Promise 2 -->
+                <div class="space-y-3">
+                    <div class="text-gold-500 text-3xl">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+                    <h4 class="serif-title text-lg font-bold text-white">Timezone & Remote Fluidity</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Leveraging modern project suites (Office 365, Teams, and Google Drive) to integrate with our partner's corporate timelines without friction.
+                    </p>
+                </div>
+                <!-- Promise 3 -->
+                <div class="space-y-3">
+                    <div class="text-gold-500 text-3xl">
+                        <i class="fa-solid fa-hand-holding-dollar"></i>
+                    </div>
+                    <h4 class="serif-title text-lg font-bold text-white">No-Risk Scoping Sessions</h4>
+                    <p class="text-xs text-slate-400 leading-relaxed">
+                        Unsure how to map and execute your contract database transitions or zoning compliance maps? Reach out for a brief scoping assessment today.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-navy-900 border-t border-slate-800 text-slate-400 py-12 text-sm">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex flex-col md:flex-row justify-between items-center space-y-6 md:space-y-0">
+                <!-- Branding info -->
+                <div class="text-center md:text-left">
+                    <div class="serif-title text-gold-500 font-bold text-lg">LEXCONTRACT SOLUTIONS</div>
+                    <p class="text-[10px] text-slate-400 uppercase tracking-widest mt-1">Smart Contract Management & Legal Support</p>
+                    <p class="text-xs text-slate-500 mt-2">© 2026 LexContract Solutions. All rights reserved.</p>
+                </div>
+
+                <!-- Contact details -->
+                <div class="text-center md:text-right text-xs space-y-1">
+                    <p><i class="fa-solid fa-envelope mr-1 text-gold-500"></i> lexcontractsolution@gmail.com</p>
+                    <p><i class="fa-solid fa-phone mr-1 text-gold-500"></i> +63 939-9190-487</p>
+                    <p><i class="fa-solid fa-map-location mr-1 text-gold-500"></i> Manila, Philippines</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- SECURE LEAD CAPTURE & REGISTRATION MODAL -->
+    <div id="leadModal" class="fixed inset-0 z-50 hidden items-center justify-center p-4 bg-navy-950/75 backdrop-blur-sm">
+        <div class="bg-white text-slate-800 rounded-2xl max-w-lg w-full overflow-hidden shadow-2xl border border-slate-200 transform transition-transform scale-95 duration-300 relative">
+            
+            <!-- Header -->
+            <div class="bg-navy-900 text-white p-6 relative">
+                <button onclick="closeLeadModal()" class="absolute top-4 right-4 text-slate-400 hover:text-white transition-colors">
+                    <i class="fa-solid fa-xmark text-xl"></i>
+                </button>
+                <div class="flex items-center space-x-3">
+                    <div class="bg-gold-500 p-2.5 rounded-lg text-navy-950">
+                        <i class="fa-solid fa-fingerprint text-lg"></i>
+                    </div>
+                    <div>
+                        <h3 class="serif-title font-bold text-lg text-gold-500">Secure Direct Message Portal</h3>
+                        <p class="text-xs text-slate-300">LexContract Solutions Consultation Gate</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Modal Content (Forms) -->
+            <div class="p-6 space-y-4">
+                
+                <!-- Initial Form Stage -->
+                <form id="leadCaptureForm" onsubmit="handleLeadSubmit(event)" class="space-y-4">
+                    <!-- Hidden trigger field -->
+                    <input type="hidden" id="serviceRequested" name="serviceRequested" value="General">
+                    
+                    <p class="text-xs text-slate-500 leading-relaxed">
+                        To initiate a direct project engagement or receive my full CV credentials portfolio, please fill out your contact specifications below:
+                    </p>
+
+                    <div>
+                        <label for="visitorName" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Your Full Name *</label>
+                        <div class="relative">
+                            <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400">
+                                <i class="fa-solid fa-user text-xs"></i>
+                            </span>
+                            <input type="text" id="visitorName" required class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-1 focus:ring-gold-500 focus:outline-none" placeholder="e.g., Director or Senior Counsel">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                        <div>
+                            <label for="visitorEmail" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Corporate Email Address *</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400">
+                                    <i class="fa-solid fa-envelope text-xs"></i>
+                                </span>
+                                <input type="email" id="visitorEmail" required class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-1 focus:ring-gold-500 focus:outline-none" placeholder="name@firm.com">
+                            </div>
+                        </div>
+                        <div>
+                            <label for="visitorPhone" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Mobile Phone Number *</label>
+                            <div class="relative">
+                                <span class="absolute inset-y-0 left-0 pl-3 flex items-center text-slate-400">
+                                    <i class="fa-solid fa-phone text-xs"></i>
+                                </span>
+                                <input type="tel" id="visitorPhone" required class="w-full pl-9 pr-3 py-2.5 bg-slate-50 border border-slate-300 rounded-xl text-sm focus:ring-1 focus:ring-gold-500 focus:outline-none" placeholder="e.g., +63 917-123-4567">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label for="visitorMessage" class="block text-xs font-bold text-slate-700 uppercase tracking-wider mb-1">Message / Project Requirements *</label>
+                        <textarea id="visitorMessage" required rows="3" class="w-full p-3 bg-slate-50 border border-slate-300 rounded-xl text-xs focus:ring-1 focus:ring-gold-500 focus:outline-none" placeholder="Explain your current operational bottleneck (e.g., contract backlog, policy drafting assistance needed, compliance planning audits, etc.)"></textarea>
+                    </div>
+
+                    <button type="submit" class="w-full bg-navy-900 hover:bg-gold-600 hover:text-navy-950 text-white font-bold py-3.5 px-4 rounded-xl text-xs uppercase tracking-wider transition-all duration-300 shadow-lg">
+                        <i class="fa-solid fa-paper-plane mr-2"></i> Send Secure Message
+                    </button>
+                </form>
+
+                <!-- Success Stage (Hidden until form submit) -->
+                <div id="formSuccessState" class="hidden text-center py-8 space-y-6">
+                    <div class="w-16 h-16 bg-emerald-100 text-emerald-600 rounded-full flex items-center justify-center mx-auto text-2xl shadow-md">
+                        <i class="fa-solid fa-check-double"></i>
+                    </div>
+                    <div>
+                        <h4 class="serif-title font-bold text-xl text-navy-900">Message Delivered</h4>
+                        <p class="text-xs text-slate-500 mt-2 max-w-xs mx-auto">
+                            Thank you for reaching out. Your secure details have been verified. You can now download my professional credentials and CV directly:
+                        </p>
+                    </div>
+
+                    <div class="space-y-3 max-w-sm mx-auto">
+                        <a href="javascript:void(0)" onclick="simulateDownload('Executive CV.pdf')" class="flex items-center justify-between p-3 bg-slate-50 border border-slate-200 rounded-xl hover:bg-gold-50 transition-colors text-xs text-left group">
+                            <span class="flex items-center text-slate-700">
+                                <i class="fa-solid fa-file-arrow-down text-gold-600 text-lg mr-3"></i>
+                                <span>
+                                    <strong class="block text-navy-900">EnP. Anna Marie Phalas - CV</strong>
+                                    <span class="text-[10px] text-slate-400">PDF, Reconciled 2026 Edition</span>
+                                </span>
+                            </span>
+                            <i class="fa-solid fa-chevron-right text-slate-400 group-hover:text-gold-600"></i>
+                        </a>
+
+                        <a href="javascript:void(0)" onclick="simulateDownload('LexContract Capabilities.pdf')" class="flex items-center justify-between p-3 bg-slate-50 border border-slate-200 rounded-xl hover:bg-gold-50 transition-colors text-xs text-left group">
+                            <span class="flex items-center text-slate-700">
+                                <i class="fa-solid fa-file-invoice text-gold-600 text-lg mr-3"></i>
+                                <span>
+                                    <strong class="block text-navy-900">LexContract Solutions Capabilities</strong>
+                                    <span class="text-[10px] text-slate-400">Interactive CLM & Support Log</span>
+                                </span>
+                            </span>
+                            <i class="fa-solid fa-chevron-right text-slate-400 group-hover:text-gold-600"></i>
+                        </a>
+                    </div>
+
+                    <button onclick="closeLeadModal()" class="text-xs text-slate-400 hover:text-navy-900 underline">
+                        Return to Homepage
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- SIMPLE TOAST MESSAGE BOX (Never use browser alert) -->
+    <div id="toastBox" class="fixed bottom-5 right-5 z-50 bg-navy-950 text-white border border-gold-600/30 p-4 rounded-xl shadow-2xl flex items-center space-x-3 transform translate-y-20 opacity-0 transition-all duration-300 pointer-events-none">
+        <div class="bg-gold-500 text-navy-950 p-2 rounded-lg">
+            <i class="fa-solid fa-bell text-sm"></i>
+        </div>
+        <div>
+            <span id="toastMessage" class="text-xs font-semibold">Success! Ready for action.</span>
+        </div>
+    </div>
+
+    <!-- Interactive Logic Script -->
+    <script>
+        // Tab switching utility
+        function switchTab(tabId) {
+            // Hide all tab content panes
+            const panes = document.querySelectorAll('.tab-pane');
+            panes.forEach(pane => {
+                pane.classList.add('hidden');
+                pane.classList.remove('block');
+            });
+
+            // Show target pane
+            const targetPane = document.getElementById('tab-content-' + tabId);
+            if (targetPane) {
+                targetPane.classList.remove('hidden');
+                targetPane.classList.add('block');
+            }
+
+            // Remove active classes from all tab control buttons
+            const buttons = [
+                { id: 'tab-btn-services', key: 'services' },
+                { id: 'tab-btn-expertise', key: 'expertise' },
+                { id: 'tab-btn-education', key: 'education' },
+                { id: 'tab-btn-trainings', key: 'trainings' }
+            ];
+
+            buttons.forEach(btnInfo => {
+                const btn = document.getElementById(btnInfo.id);
+                if (btn) {
+                    if (btnInfo.key === tabId) {
+                        btn.className = "px-5 py-2.5 rounded-lg text-xs sm:text-sm font-bold transition-all duration-200 bg-navy-900 text-white shadow-md";
+                    } else {
+                        btn.className = "px-5 py-2.5 rounded-lg text-xs sm:text-sm font-semibold transition-all duration-200 text-slate-600 hover:text-navy-950";
+                    }
+                }
+            });
+        }
+
+        // Modal Open logic
+        function openLeadModal(serviceName) {
+            const modal = document.getElementById('leadModal');
+            const hiddenField = document.getElementById('serviceRequested');
+            
+            if (hiddenField) {
+                hiddenField.value = serviceName;
+            }
+
+            // Reset form states
+            document.getElementById('leadCaptureForm').classList.remove('hidden');
+            document.getElementById('formSuccessState').classList.add('hidden');
+
+            if (modal) {
+                modal.classList.remove('hidden');
+                modal.classList.add('flex');
+            }
+        }
+
+        // Modal Close logic
+        function closeLeadModal() {
+            const modal = document.getElementById('leadModal');
+            if (modal) {
+                modal.classList.add('hidden');
+                modal.classList.remove('flex');
+            }
+        }
+
+        // Toast trigger helper
+        function triggerToast(message) {
+            const toast = document.getElementById('toastBox');
+            const msgSpan = document.getElementById('toastMessage');
+            
+            if (toast && msgSpan) {
+                msgSpan.innerText = message;
+                toast.classList.remove('translate-y-20', 'opacity-0');
+                toast.classList.add('translate-y-0', 'opacity-100');
+
+                setTimeout(() => {
+                    toast.classList.remove('translate-y-0', 'opacity-100');
+                    toast.classList.add('translate-y-20', 'opacity-0');
+                }, 4000);
+            }
+        }
+
+        // Handle Lead Generation submission
+        function handleLeadSubmit(event) {
+            event.preventDefault();
+
+            const name = document.getElementById('visitorName').value;
+            const email = document.getElementById('visitorEmail').value;
+            const phone = document.getElementById('visitorPhone').value;
+            const msg = document.getElementById('visitorMessage').value;
+            const svc = document.getElementById('serviceRequested').value;
+
+            // Transition Form to Success State
+            document.getElementById('leadCaptureForm').classList.add('hidden');
+            document.getElementById('formSuccessState').classList.remove('hidden');
+
+            triggerToast(`Secure message sent. CV files unlocked for ${name}.`);
+        }
+
+        // Simulated download handler
+        function simulateDownload(fileName) {
+            triggerToast(`Initializing download: ${fileName}`);
+        }
+    </script>
+</body>
+</html>
